@@ -45,8 +45,8 @@ def score(player, computer, increment)
   end
 end
 
+score = { player_score: 0, computer_score: 0 } # The variable should initialize outside the loop, otherwise it will keep reseting to zero.
 loop do
-  score = { player_score: 0, computer_score: 0 }
   player_choice = ''
   loop do
     choice_prompt = <<-MSG
